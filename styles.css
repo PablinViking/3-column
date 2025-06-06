@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Lexend+Deca:wght@100..900&display=swap');
+
+:root{
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+
+    --Transparent-white_paragraphs: hsla(0, 0%, 100%, 0.75);
+    --Very-light-gray_background_headings_buttons: hsl(0, 0%, 95%);
+}
+body{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    background-color: var(--Very-light-gray_background_headings_buttons);
+    font-size: 15px;
+}
+.container{
+    width: 330px;
+    margin: 90px auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    overflow: hidden;
+}
+/* ------------> Card Container <------------ */
+.cardContainer{
+    height: 444px;
+}
+
+/* ------------> Card General <------------ */
+.card{
+    margin: 48px;
+}
+.card h1{
+    font-family: "Big Shoulders", sans-serif;
+    font-size: 2.65em;
+    font-weight: 550;
+    margin: 28px 0;
+    color: var(--Very-light-gray_background_headings_buttons);
+}
+.card p{
+    font-family: "Lexend Deca", sans-serif;
+    margin: 0;
+    color: var(--Transparent-white_paragraphs);
+    font-weight: 400;
+    line-height: 25px;
+}
+.card button{
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 1.0em;
+    width: 150px;
+    height: 50px;
+    border-radius: 25px;
+    border-style: none;
+    background-color: var(--Very-light-gray_background_headings_buttons);
+    margin-top: 25px;
+}
+
+/* ------------> Card Specific <------------ */
+    /* ------------> Sedan <------------ */
+.sedansCard{
+    background-color: var(--Bright-orange);
+}
+.sedansCard button{
+    color: var(--Bright-orange);
+}
+.sedansCard button:hover{
+    background-color: var(--Bright-orange);
+    color: var(--Very-light-gray_background_headings_buttons);
+    border: 2px solid var(--Very-light-gray_background_headings_buttons);
+    cursor: pointer;
+}
+
+    /* ------------> SUV <------------ */
+.suvCard{
+    background-color: var(--Dark-cyan);
+}
+.suvCard button{
+    color: var(--Dark-cyan);
+}
+.suvCard button:hover{
+    background-color: var(--Dark-cyan);
+    color: var(--Very-light-gray_background_headings_buttons);
+    border: 2px solid var(--Very-light-gray_background_headings_buttons);
+    cursor: pointer;
+}
+
+    /* ------------> Luxury <------------ */
+.luxuryCard{
+    background-color: var(--Very-dark-cyan);
+}
+.luxuryCard button{
+    color: var(--Very-dark-cyan);
+}
+.luxuryCard button:hover{
+    background-color: var(--Very-dark-cyan);
+    color: var(--Very-light-gray_background_headings_buttons);
+    border: 2px solid var(--Very-light-gray_background_headings_buttons);
+    cursor: pointer;
+}
+
+/* ------------> Footer <------------ */
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: "Lexend Deca", sans-serif;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/* ------------> 1200px <------------ */
+@media screen and (min-width: 1200px) {
+    .container{
+        flex-direction: row;
+        width: 921px;
+        height: 500px;
+    }
+    /* ------------> Card Container <------------ */
+    .cardContainer{
+        width: 307px;
+        height: 500px;
+    }
+    /* ------------> Card General <------------ */
+    .card{
+        margin: 50px;
+    }
+    .card button{
+        margin-top: 85px;
+    }
+}
